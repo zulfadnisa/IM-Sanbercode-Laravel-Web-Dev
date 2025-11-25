@@ -1,0 +1,1 @@
+I started learning Laravel to build my backend skills and try doing some freelance work, especially since many job listings prefer full-stack developers. Laravel caught my attention because it's widely used and in high demand. When I found a class available, I took the chance to dive in and start learning.
