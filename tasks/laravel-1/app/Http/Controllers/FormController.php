@@ -8,7 +8,7 @@ class FormController
 {
     public function register()
     {
-        return view('register');
+        return view('pages.register');
     }
 
 
@@ -26,6 +26,6 @@ class FormController
         $firstname = $request->firstname;
         $lastname = $request->lastname;
 
-        return view('welcome', compact('firstname', 'lastname'));
+        return view('pages.welcome', compact('firstname', 'lastname'));
     }
 }
