@@ -71,4 +71,12 @@ class CategoryController extends Controller
 
         return redirect('/category')->with('success', 'Data saved successfully!');
     }
+
+    public function destroy($id)
+    {
+        DB::table('categories')
+            ->where('id', $id)
+            ->delete();
+        return redirect('/category')->with('success', 'Data deleted successfully!');
+    }
 }

@@ -24,6 +24,13 @@
                     <td>
                         <a href='/category/{{ $category->id }}' class="btn btn-info btn-sm">Detail</a>
                         <a href='/category/{{ $category->id }}/edit' class="btn btn-secondary btn-sm">Edit</a>
+                        <form action="{{ route('category.destroy', $category->id) }}" method="POST"
+                            style="display:inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger btn-sm"
+                                onclick="return confirm('Are you sure to delete this?')">Delete</button>
+                        </form>
                     </td>
                 </tr>
             @empty
